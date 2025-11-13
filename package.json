@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/scanner.js",
+    "analyze": "node src/analyze-report.js",
     "scan:deep": "SCAN_LIMIT=500 node src/scanner.js",
     "monitor": "node src/monitor.js",
     "test": "node -e \"import('./src/scanner.js').then(m => console.log('✅ Scanner module loaded successfully'))\""
