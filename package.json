@@ -1,7 +1,7 @@
 {
-  "name": "fork-hunt-scanner",
-  "version": "2.0.0",
-  "description": "Lethal DeFi fork hunter for vulnerable repositories - Enhanced",
+  "name": "defi-vulnerability-scanner",
+  "version": "3.0.0",
+  "description": "Professional DeFi vulnerability scanner for ERC4626 donation attacks",
   "main": "src/scanner.js",
   "type": "module",
   "scripts": {
@@ -14,9 +14,23 @@
     "quick-search": "node src/quick-market-search.js",
     "analyze-critical": "node src/analyze-critical-findings-fixed.js",
     "simple-analysis": "node src/simple-file-analyzer.js",
+    "deep-analysis": "node src/deep-vulnerability-analyzer.js",
+    "exploit-hunter": "node src/exploit-pattern-hunter.js",
     "scan:deep": "SCAN_LIMIT=500 node src/scanner.js",
-    "monitor": "node src/monitor.js"
+    "monitor": "node src/monitor.js",
+    "test": "echo 'No tests yet' && exit 0"
   },
+  "keywords": [
+    "defi",
+    "security",
+    "vulnerability",
+    "erc4626",
+    "donation-attack",
+    "blockchain",
+    "smart-contracts"
+  ],
+  "author": "Security Researcher",
+  "license": "MIT",
   "dependencies": {
     "@octokit/rest": "^20.0.0",
     "@octokit/core": "^5.0.0",
@@ -24,5 +38,8 @@
     "dotenv": "^16.0.0",
     "chalk": "^4.1.2",
     "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
