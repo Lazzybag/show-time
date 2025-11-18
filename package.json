@@ -7,9 +7,13 @@
   "scripts": {
     "start": "node src/scanner.js",
     "analyze": "node src/analyze-report.js",
+    "verify": "node src/phase1/code-verifier.js",
+    "hunt": "node src/precise-vulnerability-hunter.js",
+    "aggressive": "node src/aggressive-vault-hunter.js",
+    "markets": "node src/lending-market-hunter.js",
+    "quick-search": "node src/quick-market-search.js",
     "scan:deep": "SCAN_LIMIT=500 node src/scanner.js",
-    "monitor": "node src/monitor.js",
-    "test": "node -e \"import('./src/scanner.js').then(m => console.log('✅ Scanner module loaded successfully'))\""
+    "monitor": "node src/monitor.js"
   },
   "dependencies": {
     "@octokit/rest": "^20.0.0",
