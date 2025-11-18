@@ -12,6 +12,8 @@
     "aggressive": "node src/aggressive-vault-hunter.js",
     "markets": "node src/lending-market-hunter.js",
     "quick-search": "node src/quick-market-search.js",
+    "analyze-critical": "node src/analyze-critical-findings-fixed.js",
+    "simple-analysis": "node src/simple-file-analyzer.js",
     "scan:deep": "SCAN_LIMIT=500 node src/scanner.js",
     "monitor": "node src/monitor.js"
   },
