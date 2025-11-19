@@ -16,21 +16,14 @@
     "simple-analysis": "node src/simple-file-analyzer.js",
     "deep-analysis": "node src/deep-vulnerability-analyzer.js",
     "exploit-hunter": "node src/exploit-pattern-hunter.js",
+    "triage": "node src/target-triage-system.js",
+    "find-mainnet": "node src/mainnet-deployment-finder.js",
+    "verify-contracts": "node src/contract-verification.js",
+    "find-addresses": "node src/real-address-finder.js",
+    "research-addresses": "node src/address-replacer.js",
     "scan:deep": "SCAN_LIMIT=500 node src/scanner.js",
-    "monitor": "node src/monitor.js",
-    "test": "echo 'No tests yet' && exit 0"
+    "monitor": "node src/monitor.js"
   },
-  "keywords": [
-    "defi",
-    "security",
-    "vulnerability",
-    "erc4626",
-    "donation-attack",
-    "blockchain",
-    "smart-contracts"
-  ],
-  "author": "Security Researcher",
-  "license": "MIT",
   "dependencies": {
     "@octokit/rest": "^20.0.0",
     "@octokit/core": "^5.0.0",
@@ -38,8 +31,5 @@
     "dotenv": "^16.0.0",
     "chalk": "^4.1.2",
     "node-cron": "^3.0.3"
-  },
-  "engines": {
-    "node": ">=18.0.0"
   }
 }
